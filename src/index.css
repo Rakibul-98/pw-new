@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light-text{
+    color:rgb(0, 19, 36)
+}
+
+.light-bg{
+    background-color: aquamarine;
+}
+
+.light-btn-bg{
+    color: cornflowerblue;
+}
+
+.light-btn{
+    padding: 4px 15px;
+    border: 1px solid cornflowerblue;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+
+.dark-text{
+    color: white;
+}
+
+.dark-bg{
+    background-color: blueviolet;
+}
+
+.dark-btn{
+    background-color: chartreuse;
+}
