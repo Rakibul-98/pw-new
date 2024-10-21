@@ -1,6 +1,6 @@
 
 export default function Services() {
   return (
-    <div className="section">Services</div>
+    <div className="">Services</div>
   )
 }

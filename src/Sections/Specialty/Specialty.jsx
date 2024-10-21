@@ -1,6 +1,6 @@
 
 export default function Specialty() {
   return (
-    <div className="section">Specialty</div>
+    <div className="">Specialty</div>
   )
 }
