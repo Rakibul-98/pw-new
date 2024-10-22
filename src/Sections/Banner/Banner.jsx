@@ -6,15 +6,10 @@ import Resume from '../../assets/Resume-rakibul.pdf';
 import BannerDescription from './BannerDescription';
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { AiFillMediumSquare } from 'react-icons/ai';
-// import { motion } from 'framer-motion';
-// import { useFollowPointer } from './useFollowPointer';
 
 
 const Banner = () => {
     const imgRef = useRef(null);
-
-    // const pointer_ref = useRef(null);
-    // const { x, y } = useFollowPointer(pointer_ref);
 
     const handleLeave = () => {
             gsap.to(imgRef.current, { opacity: 0 });
@@ -65,7 +60,6 @@ const Banner = () => {
                         </div>
                     </div>
                     <div className="grid md:grid-cols-12 md:gap-5 h-screen">
-                        {/* <motion.div ref={pointer_ref} className="absolute top-1/2 left-1/2 bg-slate-700 h-20 w-20 rounded-full" style={{ x, y }} /> */}
                         <div className='col-span-6 lg:col-span-7 flex items-center justify-center'>
                             <div className='w-[90%] lg:w-[75%] mx-10 md:mx-5 lg:mx-0'>
                                 <BannerDescription />
