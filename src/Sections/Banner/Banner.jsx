@@ -70,7 +70,7 @@ const Banner = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="hidden md:flex col-span-6 lg:col-span-5 justify-end items-end overflow-hidden">
+                        <div className="hidden md:flex col-span-6 lg:col-span-5 items-end overflow-hidden">
                             <img
                                 ref={imgRef}
                                 className="h-[50vh] md:h-[90vh]"

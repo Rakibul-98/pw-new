@@ -143,7 +143,7 @@ export default function Portfolio() {
 
   const openModal = (item) => {
     setOpenModalItem(item);
-    document.getElementById('my_modal').showModal();
+    document.getElementById('project_modal').showModal();
   };
 
   return (
@@ -153,9 +153,9 @@ export default function Portfolio() {
       </div>
       <div className="grid grid-cols-3 gap-5">
         {items.map((item) => (
-          <div key={item.id} className="col-md-4 -rotate-12">
-            <div className="card">
-              <img onClick={() => openModal(item)} src={item.image} className="h-48 border cursor-pointer" alt="..." />
+          <div key={item.id} className="col-md-4 -rotate-12 hover:rotate-0 duration-300">
+            <div className=" bg-slate-500">
+              <img onClick={() => openModal(item)} src={item.image} className="h-48 cursor-pointer" alt="..." />
               <ItemModal item={openModalItem} />
             </div>
           </div>

@@ -6,7 +6,7 @@ export default function ItemModal({ item }) {
 
     return (
         <div>
-            <dialog id="my_modal" className="modal">
+            <dialog id="project_modal" className="modal">
                 <div className="modal-box p-0 w-[400px] overflow-hidden">
                     <img className="h-56 bg-slate-400" src={item.image} alt="" />
                     <div className="p-2 text-sm">

@@ -24,7 +24,7 @@ export default function BannerDescription() {
             delay: 0.3
         });
 
-        gsap.set(descriptionText.words, { opacity: 0 });
+        gsap.set(descriptionText.words, { opacity: 0.1 });
         
         gsap.to(descriptionText.words, {
             opacity: 1,

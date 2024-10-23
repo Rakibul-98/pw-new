@@ -104,7 +104,7 @@ export default function FeaturedProject() {
           {
             tech.map((tech, index) => (
               <div key={index}>
-                <span className='hover:text-primary' title={tech.name}>{tech.icon}</span>
+                <span className='' title={tech.name}>{tech.icon}</span>
               </div>
             ))
           }
