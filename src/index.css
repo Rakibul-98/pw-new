@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+    scrollbar-width: none;
+}
+
 .light-text{
     color:rgb(0, 19, 36)
 }

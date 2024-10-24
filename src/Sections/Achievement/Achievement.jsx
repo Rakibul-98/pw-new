@@ -19,7 +19,7 @@ export default function Achievement() {
 
   return (
     <div className="w-9/12 mx-auto">
-      <h3 className="text-2xl font-medium pb-5 border-b">Achievements</h3>
+      <h3 className="text-2xl font-medium pb-5 border-b">Work Experience & Achievements</h3>
       {achievements.map((achievement, index) => (
         <div key={index} className="grid grid-cols-5 items-center py-2 border-b">
           <h4>{achievement.year}</h4>

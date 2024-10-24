@@ -18,14 +18,14 @@ import { RiContactsLine } from "react-icons/ri";
 
 export default function App() {
   const sections = [
-    { id: "Banner", icon:<MdOutlineFeaturedPlayList /> , component: <Banner /> },
+    { id: "Banner", icon: <MdOutlineFeaturedPlayList />, component: <Banner /> },
+    { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
     { id: "Skills", icon: <FaTools />, component: <Skills /> },
-    { id: "Specialty", icon:<HiOutlineBadgeCheck /> , component: <Specialty /> },
-    { id: "FeaturedProject", icon: <GiLaptop /> , component: <FeaturedProject /> },
-    { id: "Portfolio", icon:<HiOutlineCollection /> , component: <Portfolio /> },
+    { id: "FeaturedProject", icon: <GiLaptop />, component: <FeaturedProject /> },
+    { id: "Portfolio", icon: <HiOutlineCollection />, component: <Portfolio /> },
     { id: "Services", icon: <MdEngineering />, component: <Services /> },
     { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
-    { id: "Achievement", icon:<GiMedal /> , component: <Achievement /> },
+    { id: "Achievement", icon: <GiMedal />, component: <Achievement /> },
     { id: "Contact", icon: <RiContactsLine />, component: <Contact /> },
   ];
 

@@ -113,7 +113,7 @@ export default function FeaturedProject() {
       <motion.div ref={pointer_ref} className="absolute top-1/2 left-1/2 bg-slate-500 opacity-25 shadow-2xl z-10 h-40 w-40 rounded-full" style={{ x, y }} />
 
       <div className={`left-1/3 transition-all duration-1000 z-50 ${imageClicked ? 'static' : 'absolute'}`}>
-        <img title='click to show more' className={`duration-500 h-[50vh] border cursor-pointer ${imageClicked ? 'rotate-0 h-[60vh]' : 'rotate-[-25deg]'}`} src={featureProject} alt="" onClick={toggleClick} />
+        <img title={`${imageClicked ? 'click to show less' : 'click to show more'}`} className={`duration-500 h-[50vh] border cursor-pointer ${imageClicked ? 'rotate-0 h-[60vh]' : 'rotate-[-25deg]'}`} src={featureProject} alt="" onClick={toggleClick} />
       </div>
     </div>
   );
