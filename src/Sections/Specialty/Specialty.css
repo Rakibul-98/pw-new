@@ -1,0 +1,56 @@
+.clipped-text{
+    background-image: url('https://i.ibb.co.com/SrysTyc/pexels-steve-3444533.jpg');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service-title{
+    background-image: url('https://i.ibb.co.com/Tbj3vC3/pexels-scottwebb-139200.jpg');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolio-title{
+    background-image: url('https://i.ibb.co.com/TK1ZvGF/colors.jpg');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.blog-title{
+    background-image: url('https://i.ibb.co.com/TT02MzZ/pexels-scottwebb-305831.jpg');
+    background-size: contain;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.achievement-title{
+    background-image: url('https://i.ibb.co.com/QQb8ZkB/pexels-markusspiske-3004519.jpg');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skills-title{
+    background-image: url('https://i.ibb.co.com/z80TJmJ/pexels-steve-1548111.jpg');
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.feature-title{
+    background-image: url('https://i.ibb.co.com/BgbLg2q/c.jpg');
+    background-size: contain;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

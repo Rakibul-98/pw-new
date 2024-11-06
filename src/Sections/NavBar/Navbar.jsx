@@ -12,12 +12,12 @@ export default function Navbar({ currentSection, sections, onSectionChange }) {
   };
 
   return (
-    <div className="absolute top-0 transform translate-y-1/2 right-1 text-center z-50">
-      <ul className="flex flex-col">
+    <div className="absolute top-0 h-full right-0 z-40">
+      <ul className="flex flex-col justify-center h-full">
         {sections.map((section, index) => (
           <li
             key={index}
-            className={`cursor-pointer py-2 px-4 text-xl transition-colors ${currentSection === section.id ? 'text-primary' : 'text-black hover:text-primary'}`}
+            className={`cursor-pointer py-2 px-4 text-xl transition-colors ${currentSection === section.id ? 'text-primary' : 'text-base-100 hover:text-primary'}`}
             onClick={() => handleClick(section)}
           >
             {section.icon}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Banner from "./Sections/Banner/Banner";
 import Skills from "./Sections/Skills/Skills";
@@ -15,9 +15,10 @@ import { FaBloggerB, FaTools } from "react-icons/fa";
 import { HiOutlineBadgeCheck, HiOutlineCollection } from "react-icons/hi";
 import { GiLaptop, GiMedal } from "react-icons/gi";
 import { RiContactsLine } from "react-icons/ri";
+import ThemeBtn from "./Sections/ThemeBtn/ThemeBtn";
 
 export default function App() {
-  const sections = [
+  const sections = useMemo(() => [
     { id: "Banner", icon: <MdOutlineFeaturedPlayList />, component: <Banner /> },
     { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
     { id: "Skills", icon: <FaTools />, component: <Skills /> },
@@ -27,10 +28,15 @@ export default function App() {
     { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
     { id: "Achievement", icon: <GiMedal />, component: <Achievement /> },
     { id: "Contact", icon: <RiContactsLine />, component: <Contact /> },
-  ];
+  ], []);
 
   const [currentSection, setCurrentSection] = useState(sections[0].id);
   const sectionRefs = useRef([]);
+
+  const [isDark, setIsDark] = useState(() => {
+    const savedTheme = localStorage.getItem("themeMode");
+    return savedTheme === 'true';
+  });
 
   useEffect(() => {
     const options = {
@@ -57,14 +63,15 @@ export default function App() {
         if (ref) observer.unobserve(ref);
       });
     };
-  }, []);
+  }, [sections]);
 
   const handleSectionChange = (section) => {
     setCurrentSection(section);
   };
 
   return (
-    <div className="relative">
+    <div data-theme={isDark ? "dark" : "cupcake"} className="relative">
+      <ThemeBtn isDark={isDark} setIsDark={setIsDark} />
       <Navbar currentSection={currentSection} sections={sections} onSectionChange={handleSectionChange} />
       <ReactFullpage
         scrollingSpeed={1000}

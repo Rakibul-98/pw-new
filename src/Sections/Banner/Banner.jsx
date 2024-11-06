@@ -6,13 +6,16 @@ import Resume from '../../assets/Resume-rakibul.pdf';
 import BannerDescription from './BannerDescription';
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { AiFillMediumSquare } from 'react-icons/ai';
+import './Banner.css';
+import { TbFileCv } from 'react-icons/tb';
+import { LiaFileDownloadSolid } from 'react-icons/lia';
 
 
 const Banner = () => {
     const imgRef = useRef(null);
 
     const handleLeave = () => {
-            gsap.to(imgRef.current, { opacity: 0 });
+        gsap.to(imgRef.current, { opacity: 0 });
     };
 
     const handleAfterLoad = (origin, destination) => {
@@ -53,27 +56,29 @@ const Banner = () => {
                     <div className='absolute top-0 h-full'>
                         <div className='flex flex-col gap-[2px] justify-center text-xl h-full p-[1px]'>
                             {socialLinks.map((link, index) => (
-                                <a key={index} className=' bg-black text-white p-[2px] hover:bg-primary' href={link.href}>
+                                <a key={index} className='bg-base-100 text-base-200 p-[2px] hover:bg-primary' target='_blank' href={link.href}>
                                     {link.icon}
                                 </a>
                             ))}
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-12 md:gap-5 h-screen">
-                        <div className='col-span-6 lg:col-span-7 flex items-center justify-center'>
-                            <div className='w-[90%] lg:w-[75%] mx-10 md:mx-5 lg:mx-0'>
+                    <div className="grid md:grid-cols-12 xl:w-[1200px] mx-auto h-screen">
+                        <div className='w-full col-span-6 lg:col-span-7 flex items-center justify-center'>
+                            <div className='ms-10 lg:ms-0 pr-10 md:pr-0 w-11/12 sm:w-9/12 md:w-full lg:w-9/12'>
                                 <BannerDescription />
-                                <div className='flex gap-3'>
-                                    <a className='bg-primary px-5 py-2 rounded-3xl flex items-center w-fit text-base-100 border border-primary hover:bg-base-100 hover:text-primary transition-all duration-1000' href={Resume}>Show Resume</a>
+                                <div className='flex gap-10 flex-wrap'>
+                                    <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume}>Show Resume</a>
+                                    <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume}><TbFileCv /> </a>
 
-                                    <a className='px-5 py-2 rounded-3xl flex items-center w-fit text-primary border border-primary hover:bg-primary hover:text-base-100 transition-all duration-1000' href={Resume}>Download Resume </a>
+                                    <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} download>Download Resume </a>
+                                    <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume} download><LiaFileDownloadSolid /> </a>
                                 </div>
                             </div>
                         </div>
                         <div className="hidden md:flex col-span-6 lg:col-span-5 items-end overflow-hidden">
                             <img
                                 ref={imgRef}
-                                className="h-[50vh] md:h-[90vh]"
+                                className="h-[50vh] md:h-[80vh] "
                                 src="https://i.ibb.co/hcNfntR/top-img.png"
                                 alt=""
                             />

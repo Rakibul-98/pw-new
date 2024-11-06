@@ -1,0 +1,15 @@
+.glow-text:hover {
+    box-shadow: 0 0 1em 0 rgb(90, 253, 253);
+    border: 1px solid rgb(90, 253, 253);
+    background-color: rgb(90, 253, 253);
+}
+
+.glow-icon:hover {
+    border: 1px solid rgb(90, 253, 253);
+    box-shadow: 0 5px 50px 0 rgb(90, 253, 253) inset,
+                0 5px 50px 0 rgb(90, 253, 253),
+                0 5px 50px 0 rgb(90, 253, 253) inset,
+                0 5px 50px 0 rgb(90, 253, 253);
+    text-shadow: 0 0 5px rgb(90, 253, 253),
+                0 0 5px rgb(90, 253, 253);
+}
