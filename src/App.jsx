@@ -35,7 +35,8 @@ export default function App() {
 
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem("themeMode");
-    return savedTheme === 'true';
+    // return savedTheme === 'true';
+    return savedTheme === 'true' ? true : true;
   });
 
   useEffect(() => {
