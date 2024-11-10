@@ -3,7 +3,7 @@
 import { FiMoon } from "react-icons/fi";
 import { MdOutlineWbSunny } from "react-icons/md";
 
-export default function ThemeBtn({isDark, setIsDark}) {
+export default function ThemeBtn({ isDark, setIsDark }) {
     const handleTheme = () => {
         const newTheme = !isDark;
         setIsDark(newTheme);

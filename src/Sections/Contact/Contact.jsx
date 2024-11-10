@@ -22,7 +22,7 @@ export default function Contact() {
   ]
 
   const socialLinks = [
-    { icon: <RiGithubLine />, link: "https://github.com/Rakibul-98", class: "hover:bg-black border-black text-black" },
+    { icon: <RiGithubLine />, link: "https://github.com/Rakibul-98", class: "hover:bg-black border-base-100 hover:border-base-200 text-base-100" },
     { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/rakibul-98/", class: "hover:bg-[#0077B5] border-[#0077B5] text-[#0077B5]" },
     { icon: <AiOutlineMedium />, link: "https://rakibul-98.medium.com/", class: "hover:bg-[#333333] hover:border-base-200 border-base-100 text-base-100" },
     { icon: <FaFacebookF />, link: "https://www.facebook.com/rakibul.rupom2001", class: "hover:bg-[#1877F2] border-[#1877F2] text-[#1877F2]" },

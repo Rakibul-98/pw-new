@@ -35,7 +35,6 @@ export default function App() {
 
   const [isDark, setIsDark] = useState(() => {
     const savedTheme = localStorage.getItem("themeMode");
-    // return savedTheme === 'true';
     return savedTheme === 'true' ? true : true;
   });
 
@@ -50,7 +49,7 @@ export default function App() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const index = sectionRefs.current.indexOf(entry.target);
-          setCurrentSection(sections[index].id);
+          setCurrentSection(sections[index]?.id);
         }
       });
     }, options);

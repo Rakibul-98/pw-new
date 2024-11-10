@@ -9,6 +9,7 @@ import { AiFillMediumSquare } from 'react-icons/ai';
 import './Banner.css';
 import { TbFileCv } from 'react-icons/tb';
 import { LiaFileDownloadSolid } from 'react-icons/lia';
+import WeatherInfo from '../WeatherInfo/WeatherInfo';
 
 
 const Banner = () => {
@@ -62,13 +63,16 @@ const Banner = () => {
                             ))}
                         </div>
                     </div>
+                    <div className='absolute left-5 top-5'>
+                        <WeatherInfo/>
+                    </div>
                     <div className="grid md:grid-cols-12 xl:w-[1200px] mx-auto h-screen">
                         <div className='w-full col-span-6 lg:col-span-7 flex items-center justify-center'>
                             <div className='ms-10 lg:ms-0 pr-10 md:pr-0 w-11/12 sm:w-9/12 md:w-full lg:w-9/12'>
                                 <BannerDescription />
                                 <div className='flex gap-10 flex-wrap'>
-                                    <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume}>Show Resume</a>
-                                    <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume}><TbFileCv /> </a>
+                                    <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} target='_blank'>Show Resume</a>
+                                    <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume} target='_blank'><TbFileCv /> </a>
 
                                     <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} download>Download Resume </a>
                                     <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume} download><LiaFileDownloadSolid /> </a>
