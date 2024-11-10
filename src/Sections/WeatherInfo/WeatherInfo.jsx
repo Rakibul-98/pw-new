@@ -3,22 +3,43 @@ import { MdOutlineMyLocation } from "react-icons/md";
 
 export default function WeatherInfo() {
 
-    const [ip, setIp] = useState('');
+    // const [ip, setIp] = useState('');
     const [location, setLocation] = useState({});
     const [weatherData, setWeatherData] = useState({});
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+
+    // useEffect(() => {
+    //     fetch('https://api.ipify.org/?format=json')
+    //         .then(res => res.json())
+    //         .then(data => setIp(data.ip))
+    // }, [])
+
+    // useEffect(() => {
+    //     fetch(`http://ip-api.com/json/${ip}`)
+    //         .then(res => res.json())
+    //         .then(data => setLocation({ lat: data.lat, lon: data.lon, city:data.city, cc:data.countryCode }))
+    // }, [ip])
+
 
     useEffect(() => {
-        fetch('https://api.ipify.org/?format=json')
-            .then(res => res.json())
-            .then(data => setIp(data.ip))
-    }, [])
-
-    useEffect(() => {
-        fetch(`http://ip-api.com/json/${ip}`)
-            .then(res => res.json())
-            .then(data => setLocation({ lat: data.lat, lon: data.lon, city:data.city, cc:data.countryCode }))
-    }, [ip])
+        // Check if geolocation is available in the browser
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const { latitude, longitude } = position.coords;
+                    setLocation({ lat: latitude, lon: longitude });
+                },
+                // eslint-disable-next-line no-unused-vars
+                (error) => {
+                    setLoading(false);
+                    setError(true);
+                }
+            );
+        } else {
+            setLoading(false);
+        }
+    }, []);
 
     useEffect(() => {
         if (location.lat && location.lon) {
@@ -32,11 +53,13 @@ export default function WeatherInfo() {
     return (
         <div>
             {loading && <div>Loading weather data...</div>}
-            {!loading && weatherData && (
+            {!loading && !error ? (
                 <div className="flex items-center gap-2">
-                    <span className="flex items-center gap-2"><span className="text-xl"><MdOutlineMyLocation /></span>{location.city}, {location.cc}</span>
+                    <span className="flex items-center gap-2"><span className="text-xl"><MdOutlineMyLocation /></span>{weatherData.name}, {weatherData?.sys?.country}</span>
                     <span className="bg-base-100 text-base-200 py-1 px-3 rounded-badge text-sm">{weatherData?.main?.temp} °C</span>
                 </div>
+            ):(
+                ''
             )}
         </div>
     )
