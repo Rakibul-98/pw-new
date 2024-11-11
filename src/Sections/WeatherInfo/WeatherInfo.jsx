@@ -3,35 +3,19 @@ import { MdOutlineMyLocation } from "react-icons/md";
 
 export default function WeatherInfo() {
 
-    // const [ip, setIp] = useState('');
     const [location, setLocation] = useState({});
     const [weatherData, setWeatherData] = useState({});
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
-    // useEffect(() => {
-    //     fetch('https://api.ipify.org/?format=json')
-    //         .then(res => res.json())
-    //         .then(data => setIp(data.ip))
-    // }, [])
-
-    // useEffect(() => {
-    //     fetch(`http://ip-api.com/json/${ip}`)
-    //         .then(res => res.json())
-    //         .then(data => setLocation({ lat: data.lat, lon: data.lon, city:data.city, cc:data.countryCode }))
-    // }, [ip])
-
-
     useEffect(() => {
-        // Check if geolocation is available in the browser
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     const { latitude, longitude } = position.coords;
                     setLocation({ lat: latitude, lon: longitude });
                 },
-                // eslint-disable-next-line no-unused-vars
-                (error) => {
+                () => {
                     setLoading(false);
                     setError(true);
                 }

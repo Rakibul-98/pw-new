@@ -10,6 +10,7 @@ import './Banner.css';
 import { TbFileCv } from 'react-icons/tb';
 import { LiaFileDownloadSolid } from 'react-icons/lia';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
+import MouseWheel from '../MouseWheel/MouseWheel';
 
 
 const Banner = () => {
@@ -63,6 +64,7 @@ const Banner = () => {
                             ))}
                         </div>
                     </div>
+                    <MouseWheel/>
                     <div className='absolute left-5 top-5'>
                         <WeatherInfo/>
                     </div>
