@@ -1,10 +1,9 @@
 /* eslint-disable react/jsx-key */
-/* eslint-disable react/prop-types */
 
 import { FaBootstrap, FaCss3Alt, FaDatabase, FaGit, FaGithub, FaHtml5, FaJava, FaJs, FaNpm, FaPython, FaReact } from "react-icons/fa"
 import { FaBugSlash } from "react-icons/fa6"
 import { MdSecurity } from "react-icons/md"
-import { SiTailwindcss, SiTypescript, SiChakraui, SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiFirebase, SiNetlify, SiVercel, SiFigma, SiPostman, SiStripe, SiRadixui, SiDevdotto } from "react-icons/si"
+import { SiTailwindcss, SiTypescript, SiChakraui, SiNodedotjs, SiExpress, SiMongodb, SiMysql, SiFirebase, SiNetlify, SiVercel, SiFigma, SiPostman, SiStripe, SiRadixui, SiDevdotto, SiNextdotjs, SiShadcnui, SiMongoose, SiZod, SiJsonwebtokens, SiMinutemailer } from "react-icons/si"
 import { TbApi } from "react-icons/tb"
 import { VscVscode } from "react-icons/vsc"
 import './Skills.css';
@@ -21,8 +20,8 @@ export default function Skills() {
     },
     {
       name: "Technologies",
-      items: ["React.js", "Tailwind CSS", "Bootstrap", "Material UI", "Chakra UI", "Flowbite", "Radix UI", "Node.js", "Express.js", "MongoDB", "MySQL"],
-      icons: [<FaReact />, <SiTailwindcss />, <FaBootstrap />, <SiChakraui />, <SiTailwindcss />, <SiRadixui />, <SiNodedotjs />, <SiExpress />, <SiMongodb />, <SiMysql />],
+      items: ["React.js", "Next,js", "Tailwind CSS", "Bootstrap", "Material UI","Shadcn", "Chakra UI", "Flowbite","Node Mailer", "Radix UI", "Node.js", "Express.js", "MongoDB", "Mongoose"],
+      icons: [<FaReact />, <SiNextdotjs /> , <SiTailwindcss />, <FaBootstrap />,<SiShadcnui />, <SiChakraui />, <SiTailwindcss />,<SiMinutemailer />, <SiRadixui />, <SiNodedotjs />, <SiExpress />, <SiMongodb />,<SiMongoose/>, <SiMysql />],
     },
     {
       name: "Tools",
@@ -31,8 +30,8 @@ export default function Skills() {
     },
     {
       name: "Others",
-      items: ["Rest API", "Chrome DevTools", "React Developer Tools", "JWT", "Stripe payment", "SSLCommerz", "Bugzilla"],
-      icons: [<TbApi />, <SiDevdotto />, <MdSecurity />, <SiStripe />, <FaBugSlash />]
+      items: ["Rest API", "Chrome DevTools", "React Developer Tools", "JWT", "Zod", "Stripe payment", "SSLCommerz", "Bugzilla"],
+      icons: [<TbApi />, <SiDevdotto />, <MdSecurity />,<SiJsonwebtokens/>, <SiZod/>, <SiStripe />, <FaBugSlash />]
     },
 
 

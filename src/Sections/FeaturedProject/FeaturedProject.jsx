@@ -1,7 +1,7 @@
-import { FaCode, FaCss3, FaHtml5, FaJsSquare, FaLink, FaReact } from 'react-icons/fa';
-import featureProject from '../../assets/featureProject/FeaturedProject.mp4';
+import { FaCode, FaCss3, FaHtml5, FaLink } from 'react-icons/fa';
+import featureProject from '../../assets/featureProject/houseFinderr.mp4';
 import { useRef } from 'react';
-import { SiFirebase, SiReactrouter, SiTailwindcss } from 'react-icons/si';
+import {  SiNextdotjs, SiShadcnui, SiTailwindcss, SiTypescript, SiZod } from 'react-icons/si';
 import { BiLogoMongodb } from 'react-icons/bi';
 import { motion } from 'framer-motion';
 import { useFollowPointer } from './useFollowPointer';
@@ -25,13 +25,13 @@ export default function FeaturedProject() {
     },
     {
       id: 3,
-      icon: <FaJsSquare />,
-      name: "JavaScript"
+      icon: <SiTypescript />,
+      name: "TypeScript"
     },
     {
       id: 4,
-      icon: <FaReact />,
-      name: "React"
+      icon: <SiNextdotjs />,
+      name: "Next js"
     },
     {
       id: 5,
@@ -40,8 +40,8 @@ export default function FeaturedProject() {
     },
     {
       id: 6,
-      icon: <SiFirebase />,
-      name: "Firebase"
+      icon: <SiShadcnui />,
+      name: "ShadCn"
     },
     {
       id: 8,
@@ -50,8 +50,8 @@ export default function FeaturedProject() {
     },
     {
       id: 7,
-      icon: <SiReactrouter />,
-      name: "React-Router"
+      icon: <SiZod />,
+      name: "Zod"
     },
 
   ];
@@ -61,13 +61,13 @@ export default function FeaturedProject() {
       id: 'link',
       icon: <FaLink />,
       label: 'Live link',
-      address: 'https://grocery-shop-70585.web.app/'
+      address: 'https://house-rent-client.onrender.com/'
     },
     {
       id: 'code',
       icon: <FaCode />,
       label: 'Github link',
-      address: 'https://github.com/Rakibul-98/grocery-shop'
+      address: 'https://github.com/Rakibul-98/house-rent-client.git'
     }
   ];
 
@@ -81,7 +81,7 @@ export default function FeaturedProject() {
       <div className={`lg:px-20 sm:px-20 ps-5 pe-12 grid md:grid-cols-2 lg:gap-10 items-center`}>
         <div className={`lg:mr-10 mr-5 text-sm lg:text-base`}>
           <div className='flex justify-between items-end text-xl font-medium'>
-            <h3>Grocery Shop</h3>
+            <h3>House Finder</h3>
             <div className='flex text-xl gap-5 z-50'>
               {
                 links.map((link, index) => (
@@ -92,13 +92,13 @@ export default function FeaturedProject() {
               }
             </div>
           </div>
-          <p className='hidden md:block mb-3 mt-1'>This is an e-commerce website for grocery products. It has a dynamic and responsive front-end design, shopping cart, and user authentication system. It can save users&apos; previous shopping activity by accessing local storage.</p>
+          <p className='hidden md:block mb-3 mt-1'>House Finder is a modern, responsive platform for finding and listing homes, featuring secure authentication, seamless property search, and an intuitive user experience.</p>
           <h3 className='text-lg font-medium a'>Features:</h3>
           <ul className='list-disc list-inside'>
             <li>User Authentication</li>
             <li>Database integration</li>
-            <li>Store cart data in local storage</li>
-            <li>Product Search</li>
+            <li>User Dashboard</li>
+            <li>Real-time Notifications</li>
           </ul>
           <div className='flex gap-3 text-xl lg:2xl mt-3 lg:mt-5'>
             {

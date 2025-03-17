@@ -3,13 +3,43 @@ import { useState } from "react";
 import ItemModal from "./ItemModal";
 import { TbApi, TbSquareArrowLeftFilled, TbSquareArrowRightFilled } from "react-icons/tb";
 import { FaBootstrap, FaCss3Alt, FaGithub, FaHtml5, FaReact } from "react-icons/fa";
-import { SiDaisyui, SiFirebase, SiGooglemaps, SiJavascript, SiMongodb, SiNetlify, SiReacthookform, SiTailwindcss, SiVercel } from "react-icons/si";
+import { SiDaisyui, SiFirebase, SiGooglemaps, SiJavascript, SiMongodb, SiNetlify, SiNextdotjs, SiReacthookform, SiRender, SiShadcnui, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import { BsRouter } from "react-icons/bs";
 import { CgSpinner } from "react-icons/cg";
 
 export default function Portfolio() {
 
     const projects = [
+        {
+            id: 17,
+            category: "Next js",
+            image: "https://i.ibb.co.com/Lzf71z7w/hr-banner.png",
+            title: "House Finder",
+            desc: "House Finder is a modern, responsive platform for finding and listing homes.",
+            features: [
+                "Role Based Authentication",
+                "Database Integration",
+                "Email Notification",
+            ],
+            techs: [<SiNextdotjs />, <SiTypescript/>, <SiTailwindcss />, <SiShadcnui />, <SiMongodb/>, <SiRender />],
+            live_link: "https://house-rent-client.onrender.com",
+            git_link: "https://github.com/Rakibul-98/house-rent-client.git",
+        },
+        {
+            id: 16,
+            category: "React",
+            image: "https://i.ibb.co.com/wZddPbw4/Screenshot-2025-02-24-203853.png",
+            title: "Bike Solution",
+            desc: "A modern, responsive e-commerce platform for purchasing bikes.",
+            features: [
+                "Rolebased Authentication",
+                "Payment Gateway Integration",
+                "User dashboard based on role",
+            ],
+            techs: [<FaReact />, <SiTypescript/>, <SiTailwindcss />, <SiDaisyui />, <SiReacthookform/>, <SiVercel />],
+            live_link: "https://bike-solution-rakibul.vercel.app/",
+            git_link: "https://github.com/Rakibul-98/bike-store-client.git",
+        },
         {
             id: 15,
             category: "React",

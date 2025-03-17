@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { gsap } from 'gsap';
 import ReactFullpage from '@fullpage/react-fullpage';
-import Resume from '../../assets/Resume-rakibul.pdf';
+import Resume from '../../assets/CV_rakibul.pdf';
 import BannerDescription from './BannerDescription';
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { AiFillMediumSquare } from 'react-icons/ai';
