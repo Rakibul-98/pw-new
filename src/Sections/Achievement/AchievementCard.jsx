@@ -14,7 +14,7 @@ export default function AchievementCard({achievement}) {
         <Tilt>
             <div
                 onClick={() => handleCardClick(achievement.id)}
-                className={`h-[150px] md:h-[200px] rounded-lg shadow-xl cursor-pointer relative overflow-hidden bg-base-100 text-base-200`}>
+                className={`h-[130px] md:h-[200px] rounded-lg shadow-xl cursor-pointer relative overflow-hidden bg-base-100 text-base-200`}>
                 <div
                     className={`absolute inset-0 flex justify-center items-center transition-transform duration-500 ${activeService === achievement.id ? 'translate-x-[-100%]' : 'translate-x-0'
                         }`}

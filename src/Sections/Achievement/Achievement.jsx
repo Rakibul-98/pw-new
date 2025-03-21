@@ -80,7 +80,7 @@ export default function Achievement() {
         </div>
         <a target='_black' className='text-right flex justify-end underline items-center gap-3 hover:no-underline hover:text-primary' href="https://www.hackerrank.com/certificates/c88d2c2f40cd">View more Certifications <BsArrowRight/></a>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-5 '>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 '>
           {achievements.map((achievement, index) => (
             <AchievementCard key={index} achievement={achievement} />
           ))}
