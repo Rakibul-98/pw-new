@@ -38,14 +38,14 @@ export default function Skills() {
   ]
 
   return (
-    <div className="w-9/12 xl:w-[900px] mx-auto">
+    <div className="w-9/12 xl:w-[1000px] mx-auto">
       <div className="pb-2 lg:pb-3 border-b">
         <h3 className="text-5xl xl:text-6xl font-extrabold uppercase mb-1 skills-title">Skills</h3>
         <small className=" leading-1">&quot;Becoming is better than being. Growth happens when you focus on developing your skills and <br className="hidden md:block" /> abilities, rather than believing you are simply born with them.&quot; — <i>Carol Dweck</i></small>
       </div>
       {skills.map((skill, index) => (
         <div key={index} className="grid grid-cols-12 items-center py-1 lg:py-2 border-b">
-          <h4 className="col-span-4 md:col-span-3">{skill.name}</h4>
+          <h4 className="col-span-3">{skill.name}</h4>
           <div className="hidden md:block col-span-9">
             {
               skill.items.map((item, index) => (
@@ -53,7 +53,7 @@ export default function Skills() {
               ))
             }
           </div>
-          <div className="md:hidden col-span-8 py-2">
+          <div className="md:hidden col-span-9 py-2">
             {
               skill.icons?.map((item, index) => (
                 <span key={index} className="m-1 inline-block text-lg border border-base-100 rounded-full p-2 hover:text-[#182a3d] glow-icon cursor-default">{item}</span>

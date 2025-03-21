@@ -25,8 +25,9 @@ export default function App() {
     { id: "FeaturedProject", icon: <GiLaptop />, component: <FeaturedProject /> },
     { id: "Portfolio", icon: <HiOutlineCollection />, component: <Portfolio /> },
     { id: "Services", icon: <MdEngineering />, component: <Services /> },
-    { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
+    
     { id: "Achievement", icon: <GiMedal />, component: <Achievement /> },
+    { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
     { id: "Contact", icon: <RiContactsLine />, component: <Contact /> },
   ], []);
 

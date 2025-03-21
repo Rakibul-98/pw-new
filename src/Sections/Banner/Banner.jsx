@@ -84,7 +84,7 @@ const Banner = () => {
                         <div className="hidden md:flex col-span-6 lg:col-span-5 items-end overflow-hidden">
                             <img
                                 ref={imgRef}
-                                className="h-[50vh] md:h-[80vh] "
+                                className="h-[50vh] md:h-[75vh] "
                                 src="https://i.ibb.co/hcNfntR/top-img.png"
                                 alt=""
                             />
