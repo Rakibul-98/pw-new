@@ -16,17 +16,20 @@ import { HiOutlineBadgeCheck, HiOutlineCollection } from "react-icons/hi";
 import { GiLaptop, GiMedal } from "react-icons/gi";
 import { RiContactsLine } from "react-icons/ri";
 import ThemeBtn from "./Sections/ThemeBtn/ThemeBtn";
+import { FaGraduationCap } from "react-icons/fa6";
+import Education from "./Sections/Education/Education";
+import './App.css';
 
 export default function App() {
   const sections = useMemo(() => [
     { id: "Banner", icon: <MdOutlineFeaturedPlayList />, component: <Banner /> },
-    { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
+    { id: "Education", icon: <FaGraduationCap />, component: <Education /> },
     { id: "Skills", icon: <FaTools />, component: <Skills /> },
     { id: "FeaturedProject", icon: <GiLaptop />, component: <FeaturedProject /> },
     { id: "Portfolio", icon: <HiOutlineCollection />, component: <Portfolio /> },
-    { id: "Services", icon: <MdEngineering />, component: <Services /> },
-    
     { id: "Achievement", icon: <GiMedal />, component: <Achievement /> },
+    { id: "Services", icon: <MdEngineering />, component: <Services /> },
+    { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
     { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
     { id: "Contact", icon: <RiContactsLine />, component: <Contact /> },
   ], []);

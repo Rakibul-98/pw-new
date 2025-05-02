@@ -3,7 +3,7 @@ import frontEnd from '../../assets/services/front-end.svg';
 import api from '../../assets/services/api.svg';
 import custom from '../../assets/services/custom.svg';
 import { useState } from 'react';
-import '../Specialty/Specialty.css';
+import '../../App.css';
 import Tilt from 'react-parallax-tilt';
 
 
@@ -22,7 +22,7 @@ export default function Services() {
   };
 
   return (
-    <div className='h-screen flex items-center'>
+    <div className='min-h-screen flex items-center py-5'>
       <div className='w-10/12 mx-auto flex md:block'>
         <div className='md:mb-20 text-center flex items-center md:block'>
           <div className="flex flex-col md:flex-row justify-center">

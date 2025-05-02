@@ -19,11 +19,11 @@ export default function BlogSection() {
 
 
   return (
-    <div className="h-screen w-10/12 md:w-11/12 xl:w-[1200px] mx-auto md:flex items-center gap-5 justify-between overflow-hidden p-5">
+    <div className="min-h-screen w-10/12 md:w-11/12 xl:w-[1200px] mx-auto md:flex items-center gap-5 justify-between overflow-hidden py-10">
       <div className='md:h-full flex flex-col justify-evenly sm:w-10/12 sm:mx-auto md:w-5/12 lg:w-6/12 md:mb-10 mb-5'>
         <div className=''>
-          <h2 className="text-2xl md:text-6xl uppercase font-bold md:font-extrabold blog-title">Blogs</h2>
-          <small className="hidden md:block mt-2">&quot;Blogging is not about writing for yourself, <br className='hidden lg:block' /> it&apos;s about writing for your audience.&quot; — <i>Jeff Bullas</i></small>
+          <h2 className="text-5xl md:text-6xl uppercase font-bold md:font-extrabold blog-title">Blogs</h2>
+          <small className="mt-2">&quot;Blogging is not about writing for yourself, <br className='hidden lg:block' /> it&apos;s about writing for your audience.&quot; — <i>Jeff Bullas</i></small>
         </div>
         <img className='hidden md:block md:h-72 xl:h-80' src={image} alt="" />
       </div>

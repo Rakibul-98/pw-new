@@ -234,7 +234,7 @@ export default function Portfolio() {
     };
 
     return (
-        <div className="h-screen flex flex-col justify-evenly w-10/12 xl:w-[1000px] mx-auto">
+        <div className="min-h-screen flex flex-col justify-evenly w-10/12 xl:w-[1000px] mx-auto py-5">
             <div className=" flex flex-col items-center">
                 <div className="flex justify-center">
                     {['p', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o'].map((char, index) => (

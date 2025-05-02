@@ -38,7 +38,7 @@ export default function Skills() {
   ]
 
   return (
-    <div className="w-9/12 xl:w-[1000px] mx-auto">
+    <div className="w-10/12 xl:w-[1000px] mx-auto py-5">
       <div className="pb-2 lg:pb-3 border-b">
         <h3 className="text-5xl xl:text-6xl font-extrabold uppercase mb-1 skills-title">Skills</h3>
         <small className=" leading-1">&quot;Becoming is better than being. Growth happens when you focus on developing your skills and <br className="hidden md:block" /> abilities, rather than believing you are simply born with them.&quot; — <i>Carol Dweck</i></small>

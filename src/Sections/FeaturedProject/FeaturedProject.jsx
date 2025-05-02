@@ -73,9 +73,9 @@ export default function FeaturedProject() {
 
 
   return (
-    <div className=' h-screen xl:w-[1200px] mx-auto flex flex-col justify-evenly py-5'>
+    <div className=' min-h-screen xl:w-[1200px] mx-auto flex flex-col justify-evenly py-5'>
       <div className='mx-10 mb-5'>
-        <h3 className='text-center uppercase font-bold md:font-extrabold  text-2xl md:text-4xl md:mb-2 feature-title'>Featured project</h3>
+        <h3 className='text-center uppercase font-bold md:font-extrabold  text-3xl md:text-4xl md:mb-2 feature-title'>Featured project</h3>
         <p className='text-center text-sm'>&quot;You don&apos;t have to wait to be confident.  Just do it and eventually <br className='hidden sm:block' /> the confidence will follow.&quot; — <i>Carrie Fisher</i></p>
       </div>
       <div className={`lg:px-20 sm:px-20 ps-5 pe-12 grid md:grid-cols-2 lg:gap-10 items-center`}>
@@ -92,7 +92,7 @@ export default function FeaturedProject() {
               }
             </div>
           </div>
-          <p className='hidden md:block mb-3 mt-1'>House Finder is a modern, responsive platform for finding and listing homes, featuring secure authentication, seamless property search, and an intuitive user experience.</p>
+          <p className=' mb-3 mt-1'>House Finder is a modern, responsive platform for finding and listing homes, featuring secure authentication, seamless property search, and an intuitive user experience.</p>
           <h3 className='text-lg font-medium a'>Features:</h3>
           <ul className='list-disc list-inside'>
             <li>User Authentication</li>

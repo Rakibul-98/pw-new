@@ -4,7 +4,7 @@ import pixel from '../../assets/specialty/pixel.svg';
 import idea2 from '../../assets/specialty/idea2.svg';
 import quality2 from '../../assets/specialty/quality2.svg';
 import pixel2 from '../../assets/specialty/pixel2.svg';
-import './Specialty.css';
+import '../../App.css';
 import Tilt from 'react-parallax-tilt';
 
 export default function Specialty() {
@@ -16,7 +16,7 @@ export default function Specialty() {
   ];
 
   return (
-    <div className="w-10/12 xl:w-[1000px] mx-auto flex md:block">
+    <div className="w-10/12 xl:w-[1000px] mx-auto flex md:block py-5">
       <div className='md:mb-20 text-center flex items-center md:block'>
         <div className="flex flex-col md:flex-row justify-center">
           {['s', 'p', 'e', 'c', 'i', 'a', 'l', 't', 'y'].map((char, index) => (
