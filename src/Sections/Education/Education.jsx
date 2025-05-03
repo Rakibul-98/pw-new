@@ -16,13 +16,15 @@ export default function Education() {
             duration: "2024",
             outcomes: [
                 "Explored Next.js features—SSR, SSG, API routes—and fine-tuned app performance and SEO.",
+                "Designed and implemented MongoDB schemas with proper indexing, improving query performance"
             ],
         },
         {
             title: "Redux: Beginner → Advanced",
             duration: "2021",
             outcomes: [
-                "Specialized in global state management, middleware patterns, and performance tuning for large React apps.",
+                "Specialized in global state management, middleware patterns, and performance tuning.",
+                "Built scalable Redux architectures using Redux Toolkit and integrated with async workflows"
             ],
         },
         {
@@ -30,8 +32,9 @@ export default function Education() {
             duration: "2021",
             outcomes: [
                 "Mastered HTML5, CSS3, JavaScript, Node.js and React through real-world projects.",
+                "Built full-stack applications with RESTful APIs, authentication, and responsive design."
             ],
-        },
+        }
 
     ];
 
@@ -58,10 +61,10 @@ export default function Education() {
                         {educationData.map((edu, index) => (
                             <Tilt key={index}>
                                 <div
-                                    className={`w-[90%] md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
-                                        <h3 className="text-lg font-semibold text-blue-400 mb-5">{edu.title} <span className="text-sm text-gray-300"> - {edu.duration}</span></h3>
-                                        
-                                    <ul className="list-disc ml-5 mt-2 space-y-1 text-gray-300 text-sm">
+                                    className={`w-[90%] glow md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
+                                    <h3 className="text-lg font-semibold text-blue-400 mb-5">{edu.title} <span className="text-sm text-white"> - {edu.duration}</span></h3>
+
+                                    <ul className="list-disc ml-5 mt-2 space-y-1  text-sm text-white">
                                         {edu.outcomes.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}

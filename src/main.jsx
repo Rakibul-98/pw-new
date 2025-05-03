@@ -3,6 +3,9 @@ import './index.css'
 import React from 'react';
 import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Projects from './Sections/Projects/Projects';
+import ProjectDetails from './Sections/Projects/ProjectDetails';
+import AchievementDetails from './Sections/Achievement/AchievementDetails';
 
 const router = createBrowserRouter([
   {
@@ -10,8 +13,16 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/project",
-    element: <div>hello projects</div>,
+    path: "/projects",
+    element: <Projects/>,
+  },
+  {
+    path: "/projects/:projectId",
+    element: <ProjectDetails />,
+  },
+  {
+    path: "/achievements/:id",
+    element: <AchievementDetails />,
   },
 ]);
 

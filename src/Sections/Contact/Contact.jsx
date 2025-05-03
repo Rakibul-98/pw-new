@@ -4,6 +4,7 @@ import profile from '../../assets/profile.png';
 import { AiOutlineMedium } from 'react-icons/ai';
 import { RiGithubLine } from 'react-icons/ri';
 import { FaWhatsapp } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
 
@@ -23,11 +24,11 @@ export default function Contact() {
   ]
 
   const socialLinks = [
-    { icon: <FaWhatsapp />, name:"Whatsapp", link: "https://wa.me/8801728976379", class: "hover:bg-[#25D366] border-[#25D366] text-[#25D366]" },
-    { icon: <RiGithubLine />, name:"Github", link: "https://github.com/Rakibul-98", class: "hover:bg-black border-base-100 hover:border-base-200 text-base-100" },
-    { icon: <FaLinkedinIn />, name:"Linkedin", link: "https://www.linkedin.com/in/rakibul-98/", class: "hover:bg-[#0077B5] border-[#0077B5] text-[#0077B5]" },
-    { icon: <AiOutlineMedium />, link: "https://rakibul-98.medium.com/", name:"Medium", class: "hover:bg-[#333333] hover:border-base-200 border-base-100 text-base-100" },
-    { icon: <FaFacebookF />, name:"Facebook", link: "https://www.facebook.com/rakibul.rupom2001", class: "hover:bg-[#1877F2] border-[#1877F2] text-[#1877F2]" },
+    { icon: <FaWhatsapp />, name: "Whatsapp", link: "https://wa.me/8801728976379", class: "hover:bg-[#25D366] border-[#25D366] text-[#25D366]" },
+    { icon: <RiGithubLine />, name: "Github", link: "https://github.com/Rakibul-98", class: "hover:bg-black border-base-100 hover:border-base-200 text-base-100" },
+    { icon: <FaLinkedinIn />, name: "Linkedin", link: "https://www.linkedin.com/in/rakibul-98/", class: "hover:bg-[#0077B5] border-[#0077B5] text-[#0077B5]" },
+    { icon: <AiOutlineMedium />, link: "https://rakibul-98.medium.com/", name: "Medium", class: "hover:bg-[#333333] hover:border-base-200 border-base-100 text-base-100" },
+    { icon: <FaFacebookF />, name: "Facebook", link: "https://www.facebook.com/rakibul.rupom2001", class: "hover:bg-[#1877F2] border-[#1877F2] text-[#1877F2]" },
   ]
 
   return (
@@ -75,10 +76,13 @@ export default function Contact() {
               <p>Thanks for scrolling all the way down — that means a lot! </p> <p className='my-2'>This portfolio is not just a showcase — it’s a reflection of my journey, my values, and the impact I hope to make through technology. If something here caught your eye or sparked an idea, don’t hesitate to reach out.</p> <p>  Let’s connect and build something meaningful together.</p>
             </div>
             <div className="mt-4 flex gap-4 text-sm text-primary">
+              <Link to='/projects' className="hover:text-base-100">
+                Projects
+              </Link>
               {socialLinks.map((link) => (
-                <a key={link.link} href={link.link} className="hover:text-base-100">
+                <Link key={link.link} to={link.link} target='_blank' className="hover:text-base-100">
                   {link.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Banner from "./Sections/Banner/Banner";
 import Skills from "./Sections/Skills/Skills";
-import Specialty from "./Sections/Specialty/Specialty";
+// import Specialty from "./Sections/Specialty/Specialty";
 import FeaturedProject from "./Sections/FeaturedProject/FeaturedProject";
 import Portfolio from "./Sections/Portfolio/Portfolio";
 import Services from "./Sections/Services/Services";
@@ -12,7 +12,7 @@ import Contact from "./Sections/Contact/Contact";
 import Navbar from "./Sections/NavBar/Navbar";
 import { MdEngineering, MdOutlineFeaturedPlayList } from "react-icons/md";
 import { FaBloggerB, FaTools } from "react-icons/fa";
-import { HiOutlineBadgeCheck, HiOutlineCollection } from "react-icons/hi";
+import {  HiOutlineCollection } from "react-icons/hi";
 import { GiLaptop, GiMedal } from "react-icons/gi";
 import { RiContactsLine } from "react-icons/ri";
 import ThemeBtn from "./Sections/ThemeBtn/ThemeBtn";
@@ -29,7 +29,7 @@ export default function App() {
     { id: "Portfolio", icon: <HiOutlineCollection />, component: <Portfolio /> },
     { id: "Achievement", icon: <GiMedal />, component: <Achievement /> },
     { id: "Services", icon: <MdEngineering />, component: <Services /> },
-    { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
+    // { id: "Specialty", icon: <HiOutlineBadgeCheck />, component: <Specialty /> },
     { id: "Blogs", icon: <FaBloggerB />, component: <Blogs /> },
     { id: "Contact", icon: <RiContactsLine />, component: <Contact /> },
   ], []);

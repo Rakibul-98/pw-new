@@ -49,7 +49,7 @@ const Banner = () => {
             </div>
             <div className="grid md:grid-cols-12 xl:w-[1200px] mx-auto gap-10 ">
                 <div className='w-full col-span-6 flex items-center justify-center'>
-                    <div className='ms-10 lg:ms-0 pr-10 md:pr-0 w-10/12 sm:w-9/12 md:w-full lg:w-10/12'>
+                    <div className='ms-5 lg:ms-0 pr-10 md:pr-0 w-10/12 sm:w-9/12 md:w-full lg:w-10/12'>
                         <BannerDescription />
                         <div className='flex gap-10 flex-wrap'>
                             <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} target='_blank'>Show Resume</a>
