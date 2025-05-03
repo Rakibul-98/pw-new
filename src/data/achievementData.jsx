@@ -29,9 +29,9 @@ export const achievements = [
             "Strengthened collaboration in a fast-paced agile team"
         ],
         imgSrc: EIT,
-        // pdf: expressITPdf,
+        pdf: EIT,
         imgAlt: "Express IT Certificate",
-        verificationLink: "https://drive.google.com/file/d/1p1RShs_3hCsf_iHEAGEoDCLqvzkkVIfw/view"
+        // verificationLink: "https://drive.google.com/file/d/1p1RShs_3hCsf_iHEAGEoDCLqvzkkVIfw/view"
     },    
     {
         id: 1,

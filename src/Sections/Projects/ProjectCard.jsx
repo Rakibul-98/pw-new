@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
                     <img src={images[0]} alt={title} className="w-full h-full object-cover" />
                 </figure>
 
-                <div className="card-body py-4 px-5">
+                <div className="card-body py-4 px-5 text-white">
                     <div className="flex justify-between items-center">
                         <h2 className="text-lg font-semibold">{title}</h2>
                         <span className="text-xs px-2 py-1 bg-white text-blue-800 uppercase font-semibold rounded-full">

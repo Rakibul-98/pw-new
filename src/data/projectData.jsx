@@ -15,7 +15,7 @@ export const projects = [
             "https://i.ibb.co.com/zWq86Xs7/hr3.png",
         ],
         title: "House Finder",
-        overview: "A comprehensive property rental platform connecting homeowners with tenants through advanced search filters and secure communication channels.",
+        overview: "A comprehensive property rental platform connecting homeowners with tenants through advanced search filters",
         desc: "House Finder is a modern, responsive platform for finding and listing homes, featuring secure authentication, seamless property search, and an intuitive user experience.",
         features: [
             "JWT-based authentication system",

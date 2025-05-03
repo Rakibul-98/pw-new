@@ -33,7 +33,7 @@ export default function AchievementCard({ achievement }) {
                     <h3 className="text-lg font-medium px-2">
                         {achievement.title}
                     </h3>
-                    <p className="text-sm text-gray-600 mt-1 px-2">
+                    <p className="text-sm mt-1 px-2">
                         {achievement.company} • {achievement.year}
                     </p>
                     <span className='mt-3 text-sm text-primary'>Click to show details</span>
