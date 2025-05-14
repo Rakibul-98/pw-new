@@ -27,7 +27,7 @@ export default function FeaturedProject() {
       id: 'link',
       icon: <FaLink />,
       label: 'Live link',
-      address: 'https://house-rent-client.onrender.com/'
+      address: 'https://house-finder-rakibul.vercel.app'
     },
     {
       id: 'code',
@@ -52,7 +52,7 @@ export default function FeaturedProject() {
         <div className="md:col-span-2 space-y-3 text-sm lg:text-base">
           <div className=" flex justify-between items-center text-xl font-medium">
             <h3 className='text-3xl'>House Finder</h3>
-            <div className="flex text-xl gap-4">
+            <div className="flex text-xl gap-4 z-50">
               {links.map((link, index) => (
                 <a key={index} href={link.address} target="_blank" rel="noopener noreferrer">
                   <span className="text-primary hover:text-base-100" title={link.label}>{link.icon}</span>
@@ -67,10 +67,11 @@ export default function FeaturedProject() {
 
           <h3 className="text-xl font-medium">Features:</h3>
           <ul className="list-disc list-inside">
-            <li>User Authentication</li>
+            <li>JWT-based authentication system</li>
             <li>Database integration</li>
-            <li>User Dashboard</li>
-            <li>Real-time Notifications</li>
+            <li>MongoDB database with Mongoose ODM</li>
+            <li>Real-time email notifications</li>
+            <li>Geo-location search functionality</li>
           </ul>
 
           <div className="flex flex-wrap gap-3 text-2xl mt-4">

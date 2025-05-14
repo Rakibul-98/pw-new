@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-key */
 import {  FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
-import { SiDaisyui, SiFirebase,  SiJavascript, SiMongodb, SiNetlify, SiNextdotjs, SiReacthookform, SiRender, SiShadcnui, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
+import { SiDaisyui, SiFirebase,  SiJavascript, SiMongodb, SiNetlify, SiNextdotjs, SiReacthookform, SiShadcnui, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 import { BsRouter } from "react-icons/bs";
 // import { CgSpinner } from "react-icons/cg";
 import { TbApi } from "react-icons/tb";
@@ -10,7 +10,7 @@ export const projects = [
         id: 17,
         category: "Next",
         images: [
-            "https://i.ibb.co.com/ZRKS4R6g/hr1.png",
+            "https://i.ibb.co/5PW8k8x/thumb.png",
             "https://i.ibb.co.com/nMznmgnP/hr2.png",
             "https://i.ibb.co.com/zWq86Xs7/hr3.png",
         ],
@@ -38,7 +38,7 @@ export const projects = [
             "Implement chat functionality",
             "Develop mobile app version"
         ],
-        techs: [<SiNextdotjs />, <SiTypescript />, <SiTailwindcss />, <SiShadcnui />, <SiMongodb />, <SiRender />],
+        techs: [<SiNextdotjs />, <SiTypescript />, <SiTailwindcss />, <SiShadcnui />, <SiMongodb />, <SiVercel />],
         live_link: "https://house-finder-rakibul.vercel.app/",
         git_link: "https://github.com/Rakibul-98/house-rent-client.git",
     },
@@ -46,7 +46,7 @@ export const projects = [
         id: 16,
         category: "React",
         images: [
-            "https://i.ibb.co.com/p6DvzVf9/bs1.png",
+            "https://i.ibb.co/Xr5xCLXv/bike.png",
             "https://i.ibb.co.com/v4PwTcVp/bs2.png",
             "https://i.ibb.co.com/ymZXJTJz/bs3.png"
         ],
@@ -74,8 +74,8 @@ export const projects = [
             "Develop loyalty program system"
         ],
         techs: [<FaReact />, <SiTypescript />, <SiTailwindcss />, <SiDaisyui />, <SiReacthookform />, <SiVercel />],
-        live_link: "https://bike-solution-rakibul.vercel.app/",
-        git_link: "https://github.com/Rakibul-98/bike-store-client.git",
+        live_link: "https://bike-solution-client-complete.vercel.app",
+        git_link: "https://github.com/Rakibul-98/bike-solution-client-complete-.git",
     },
     {
         id: 7,
