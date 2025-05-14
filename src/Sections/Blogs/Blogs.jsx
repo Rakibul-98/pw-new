@@ -50,17 +50,17 @@ export default function BlogSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {blogs.map((blog) => (
           <Tilt key={blog.id}>
-            <div  className="bg-base-300 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
+            <div  className="bg-base-300 shadow-md rounded-md overflow-hidden hover:shadow-xl transition duration-300">
               <img src={blog.image} alt={blog.title} className="w-full h-44 object-cover" />
               <div className="p-5 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold line-clamp-2">{blog.title}</h3>
-                  <p className="text-sm line-clamp-3 my-3">{blog.description}</p>
+                  <h3 className="text-lg font-semibold line-clamp-2">{blog.title}</h3>
+                  <p className="text-xs line-clamp-3 my-3">{blog.description}</p>
                 </div>
                 <Link
                   to={blog.link}
                   target="_blank"
-                  className="text-end inline-block text-blue-600 hover:underline font-medium"
+                  className="text-sm text-end inline-block text-blue-600 hover:underline font-medium"
                 >
                   Read More →
                 </Link>

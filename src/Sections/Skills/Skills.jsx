@@ -65,8 +65,8 @@ export default function Skills() {
   return (
     <div className="w-10/12 mx-auto py-5">
       <div className="pb-3 border-b border-base-100">
-        <h3 className="text-5xl xl:text-6xl font-extrabold uppercase mb-1 skills-title">Skills</h3>
-        <p className="leading-1">
+        <h3 className="text-5xl font-extrabold uppercase mb-1 skills-title">Skills</h3>
+        <p className="leading-1 text-sm">
           &quot;Becoming is better than being. Growth happens when you focus on developing your skills and{" "}
           <br className="hidden md:block" /> abilities, rather than believing you are simply born with them.&quot; —
           <i> Carol Dweck</i>
@@ -83,7 +83,7 @@ export default function Skills() {
                 className="flex flex-col items-center justify-center aspect-square border border-base-100 bg-base-200 hover:text-[#182a3d] glow-text cursor-default  h-full px-[2px]"
               >
                 <div className="text-4xl mb-2">{skill.icon}</div>
-                <span className="text-sm text-center line-clamp-1">{skill.name}</span>
+                <span className="text-xs text-center line-clamp-1">{skill.name}</span>
               </div>
             ))}
           </div>

@@ -46,7 +46,7 @@ export default function Education() {
                         {['e', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n'].map((char, index) => (
                             <span
                                 key={index}
-                                className="education-title text-6xl uppercase font-extrabold tracking-widest"
+                                className="education-title text-5xl uppercase font-extrabold tracking-widest"
                             >
                                 {char}
                             </span>
@@ -70,7 +70,7 @@ export default function Education() {
                                     className={`h-full w-[90%] md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
                                     <h3 className="text-lg font-semibold text-blue-400 mb-5">{edu.title} <span className="text-sm text-white"> - {edu.duration}</span></h3>
 
-                                    <ul className="list-disc ml-5 mt-2 space-y-1 text-sm xl:text-base text-white">
+                                    <ul className="list-disc ml-5 mt-2 space-y-1 text-sm xl:text-md text-white">
                                         {edu.outcomes.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}

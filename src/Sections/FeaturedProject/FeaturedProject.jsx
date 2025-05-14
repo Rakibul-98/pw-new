@@ -40,10 +40,10 @@ export default function FeaturedProject() {
   return (
     <div className="min-h-screen w-[90%] mx-auto flex flex-col justify-evenly py-5">
       <div className="mx-10 mb-5">
-        <h3 className="text-center uppercase font-bold md:font-extrabold text-3xl md:text-5xl md:mb-2 skills-title">
+        <h3 className="text-center uppercase font-bold md:font-extrabold text-3xl md:text-4xl md:mb-2 skills-title">
           Featured project
         </h3>
-        <p className="text-center">
+        <p className="text-center text-sm">
           &quot;You don&apos;t have to wait to be confident. Just do it and eventually <br className="hidden sm:block" /> the confidence will follow.&quot; — <i>Carrie Fisher</i>
         </p>
       </div>

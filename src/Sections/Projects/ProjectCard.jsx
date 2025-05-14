@@ -10,7 +10,7 @@ export default function ProjectCard({ project }) {
         <Tilt>
             <div
                 onClick={() => navigate(`/projects/${id}`)}
-                className="card w-full cursor-pointer bg-[#0a121f] hover:scale-[1.05] transition-transform shadow-2xl shadow-slate-600 h-full"
+                className="card rounded-md w-full cursor-pointer bg-[#0a121f] hover:scale-[1.05] transition-transform shadow-2xl shadow-slate-600 h-full"
             >
                 <figure className="h-52 md:h-48 lg:h-40 overflow-hidden">
                     <img src={images[0]} alt={title} className="w-full h-full object-cover" />
@@ -24,7 +24,7 @@ export default function ProjectCard({ project }) {
                         </span>
                     </div>
 
-                    <p className="text-sm">{overview}</p>
+                    <p className="text-xs">{overview}</p>
 
                     <div className="mt-3 flex flex-wrap gap-3 text-xl">
                         {techs.map((t, i) => (

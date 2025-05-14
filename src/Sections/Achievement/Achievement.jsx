@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 export default function Achievement() {
 
   return (
-    <div className=' min-h-screen w-10/12 mx-auto flex items-center py-10 gap-5'>
+    <div className=' min-h-screen w-10/12 mx-auto flex items-center py-5 gap-5'>
       <div className="w-full">
-        <div className='mb-3 md:mb-5'>
+        <div className='mb-3'>
           <div className=' '>
-            <h3 className="text-5xl font-bold mb-1 skills-title ">Work Experience & Achievements</h3>
-            <p className=''>&quot;Doing the best at this moment puts you in the best place for the next moment.&quot; — <i>Oprah Winfrey</i></p>
+            <h3 className="text-4xl font-bold mb-1 skills-title ">Work Experience & Achievements</h3>
+            <p className='text-sm'>&quot;Doing the best at this moment puts you in the best place for the next moment.&quot; — <i>Oprah Winfrey</i></p>
           </div>
           <div className='flex justify-end'>
             <Link target='_black' className='text-right flex justify-end underline items-center gap-3 hover:no-underline hover:text-primary w-fit' to="https://www.hackerrank.com/certificates/c88d2c2f40cd">View more Certifications <BsArrowRight /></Link>

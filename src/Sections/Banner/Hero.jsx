@@ -59,7 +59,7 @@ const Hero = () => {
                         </div>
 
                         <pre className="whitespace-pre-wrap text-white">
-                            <code>
+                            <code className='text-xs'>
                                 <span className="text-purple-400">const</span>{' '}
                                 <span className="text-green-300">developer</span> = &#123;
                                 <br />
