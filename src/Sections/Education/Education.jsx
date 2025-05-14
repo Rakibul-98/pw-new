@@ -39,9 +39,9 @@ export default function Education() {
     ];
 
     return (
-        <section className="md:h-screen flex items-center py-10">
+        <section className="md:min-h-screen flex items-center py-10">
             <div className='w-10/12 mx-auto flex md:block'>
-                <div className='md:mb-20 text-center flex items-center md:block'>
+                <div className=' text-center flex items-center md:block'>
                     <div className="flex flex-col md:flex-row justify-center">
                         {['e', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n'].map((char, index) => (
                             <span
@@ -56,6 +56,12 @@ export default function Education() {
 
                     </i></small>
                 </div>
+                <div className="mt-5 mb-10 text-white hidden md:block">
+                    <h4 className="text-blue-300 text-lg font-bold mb-2">What&apos;s Next?</h4>
+                    <p className="text-sm max-w-xl">
+                        Currently exploring Machine Learning and AI integrations into full-stack projects. Excited to dive deeper into scalable architecture and DevOps!
+                    </p>
+                </div>
                 <div className='w-full flex justify-center items-center'>
                     <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-5 md:gap-5 justify-items-center">
                         {educationData.map((edu, index) => (
@@ -64,7 +70,7 @@ export default function Education() {
                                     className={`h-full w-[90%] md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
                                     <h3 className="text-lg font-semibold text-blue-400 mb-5">{edu.title} <span className="text-sm text-white"> - {edu.duration}</span></h3>
 
-                                    <ul className="list-disc ml-5 mt-2 space-y-1  text-sm text-white">
+                                    <ul className="list-disc ml-5 mt-2 space-y-1 text-sm xl:text-base text-white">
                                         {edu.outcomes.map((point, i) => (
                                             <li key={i}>{point}</li>
                                         ))}
