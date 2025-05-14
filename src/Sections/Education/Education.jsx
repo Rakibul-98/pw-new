@@ -57,8 +57,8 @@ export default function Education() {
                     </i></small>
                 </div>
                 <div className="mt-5 mb-10 text-white hidden md:block">
-                    <h4 className="text-blue-300 text-lg font-bold mb-2">What&apos;s Next?</h4>
-                    <p className="text-sm max-w-xl">
+                    <h4 className="text-primary text-lg font-bold mb-2">What&apos;s Next?</h4>
+                    <p className="text-sm max-w-xl text-base-100">
                         Currently exploring Machine Learning and AI integrations into full-stack projects. Excited to dive deeper into scalable architecture and DevOps!
                     </p>
                 </div>
