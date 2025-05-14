@@ -57,11 +57,11 @@ export default function Education() {
                     </i></small>
                 </div>
                 <div className='w-full flex justify-center items-center'>
-                    <div className=" grid md:grid-cols-4 gap-5 md:gap-5 justify-items-center">
+                    <div className=" grid lg:grid-cols-4 md:grid-cols-2 gap-5 md:gap-5 justify-items-center">
                         {educationData.map((edu, index) => (
                             <Tilt key={index}>
                                 <div
-                                    className={`w-[90%] glow md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
+                                    className={`h-full w-[90%] md:w-full mx-auto rounded-lg bg-[#1e293b] border border-blue-600 p-4`}>
                                     <h3 className="text-lg font-semibold text-blue-400 mb-5">{edu.title} <span className="text-sm text-white"> - {edu.duration}</span></h3>
 
                                     <ul className="list-disc ml-5 mt-2 space-y-1  text-sm text-white">

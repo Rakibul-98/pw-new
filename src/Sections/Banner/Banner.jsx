@@ -4,8 +4,6 @@ import BannerDescription from './BannerDescription';
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { AiFillMediumSquare } from 'react-icons/ai';
 import './Banner.css';
-import { TbFileCv } from 'react-icons/tb';
-import { LiaFileDownloadSolid } from 'react-icons/lia';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import MouseWheel from '../MouseWheel/MouseWheel';
 import Hero from './Hero';
@@ -47,20 +45,27 @@ const Banner = () => {
             <div className='absolute left-5 top-5'>
                 <WeatherInfo />
             </div>
-            <div className="grid md:grid-cols-12 xl:w-[1200px] mx-auto gap-10 ">
-                <div className='w-full col-span-6 flex items-center justify-center'>
-                    <div className='ms-5 lg:ms-0 pr-10 md:pr-0 w-10/12 sm:w-9/12 md:w-full lg:w-10/12'>
+            <div className="flex flex-col lg:flex-row w-10/12 mx-auto gap-10 items-center">
+                <div className='w-full lg:w-1/2'>
+                    <div className='px-4 lg:px-0'>
                         <BannerDescription />
-                        <div className='flex gap-10 flex-wrap'>
-                            <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} target='_blank'>Show Resume</a>
-                            <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume} target='_blank'><TbFileCv /> </a>
+                        <div className='flex gap-2 sm:gap-4 lg:mt-10'>
+                            <a className='glow-btn px-4 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap text-xs sm:text-base'
+                                href={Resume}
+                                target='_blank'
+                                rel="noopener noreferrer">
+                                Show Resume
+                            </a>
 
-                            <a className='hidden sm:block glow-btn px-5 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap' href={Resume} download>Download Resume </a>
-                            <a className='sm:hidden glow-btn px-8 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 text-2xl' href={Resume} download><LiaFileDownloadSolid /> </a>
+                            <a className='glow-btn px-4 py-2 bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200 whitespace-nowrap text-xs sm:text-base'
+                                href={Resume}
+                                download>
+                                Download Resume
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div className='w-full col-span-6 flex items-center justify-center'>
+                <div className='w-full lg:w-1/2 px-4 lg:px-0'>
                     <Hero />
                 </div>
             </div>

@@ -7,22 +7,25 @@ const Hero = () => {
 
     const copyCode = () => {
         const code = `const developer = {
-            name: 'Rakibul Hasan',
-            role: 'Full-Stack Developer',
-            location: 'Dhaka, Bangladesh',
-            technicalSkills: {
-                frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-                backend: ['Node.js', 'Express', 'NestJS'],
-                database: ['MongoDB']
-            },
-        };`;
+    name: 'Rakibul Hasan',
+    role: 'Full-Stack Developer',
+    location: 'Dhaka, Bangladesh',
+    contact: '+8801728976379',
+    technicalSkills: {
+        frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+        backend: ['Node.js', 'Express', 'NestJS'],
+        database: ['MongoDB']
+    },
+    softSkills: ['Problem Solving', 'Team Collaboration', 'Communication', 'Critical Thinking'],
+    tools: ['VS Code', 'GitHub', 'Postman', 'Figma', 'Vercel', 'Netlify']
+};`;
         navigator.clipboard.writeText(code);
         setCopied(true);
         setTimeout(() => setCopied(false), 1000);
     };
 
     return (
-        <section className="w-10/12 md:w-full">
+        <section className="">
             <div className="bg-[#1e293b] rounded-xl shadow-lg p-6 font-mono text-sm relative border border-blue-600">
                 <div className="flex items-center gap-2 mb-4">
                     <div className="flex gap-2">
@@ -50,24 +53,57 @@ const Hero = () => {
 
                     <div className="grid grid-cols-[30px_1fr] gap-4">
                         <div className="text-right text-gray-500 select-none">
-                            {Array.from({ length: 10 }).map((_, i) => (
+                            {Array.from({ length: 14 }).map((_, i) => (
                                 <div key={i}>{i + 1}</div>
                             ))}
                         </div>
 
                         <pre className="whitespace-pre-wrap text-white">
                             <code>
-                                <span className="text-purple-400">const</span> <span className="text-green-300">developer</span> = &#123;<br />
-                                &nbsp;&nbsp;<span className="text-yellow-300">name</span>: <span className="text-pink-300">&apos;Rakibul Hasan&apos;</span>,<br />
-                                &nbsp;&nbsp;<span className="text-yellow-300">role</span>: <span className="text-pink-300">&apos;Full-Stack Developer&apos;</span>,<br />
-                                &nbsp;&nbsp;<span className="text-yellow-300">location</span>: <span className="text-pink-300">&apos;Dhaka, Bangladesh&apos;</span>,<br />
-                                &nbsp;&nbsp;<span className="text-yellow-300">technicalSkills</span>: &#123;<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">frontend</span>: [<span className="text-pink-300">React</span>, <span className="text-pink-300">Next.js</span>, <span className="text-pink-300">TypeScript</span>, <span className="text-pink-300">Tailwind CSS</span>],<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">backend</span>: [<span className="text-pink-300">Node.js</span>, <span className="text-pink-300">Express</span>, <span className="text-pink-300">NestJS</span>],<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">database</span>: [<span className="text-pink-300">MongoDB</span>],
-                                &nbsp;&nbsp;&nbsp;&nbsp;<br />
-                                &nbsp;&nbsp;&#125;
-                                &nbsp;&nbsp;<br />
+                                <span className="text-purple-400">const</span>{' '}
+                                <span className="text-green-300">developer</span> = &#123;
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">name</span>:{' '}
+                                <span className="text-pink-300">Rakibul Hasan</span>,
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">role</span>:{' '}
+                                <span className="text-pink-300">Full-Stack Developer</span>,
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">location</span>:{' '}
+                                <span className="text-pink-300">Dhaka, Bangladesh</span>,
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">contact</span>:{' '}
+                                <span className="text-pink-300">+8801728976379</span>,
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">technicalSkills</span>: &#123;
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">frontend</span>:{' '}
+                                [<span className="text-pink-300">React</span>,{' '}
+                                <span className="text-pink-300">Next.js</span>,{' '}
+                                <span className="text-pink-300">TypeScript</span>,{' '}
+                                <span className="text-pink-300">Tailwind CSS</span>],
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">backend</span>:{' '}
+                                [<span className="text-pink-300">Node.js</span>,{' '}
+                                <span className="text-pink-300">Express</span>],
+                                <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">database</span>:{' '}
+                                [<span className="text-pink-300">MongoDB</span>],
+                                <br />
+                                &nbsp;&nbsp;&#125;,
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">softSkills</span>: [<span className="text-pink-300">Problem Solving</span>,{' '}
+                                <span className="text-pink-300">Team Collaboration</span>,{' '}
+                                <span className="text-pink-300">Communication</span>,{' '}
+                                <span className="text-pink-300">Critical Thinking</span>],
+                                <br />
+                                &nbsp;&nbsp;<span className="text-yellow-300">tools</span>: [<span className="text-pink-300">VS Code</span>,{' '}
+                                <span className="text-pink-300">GitHub</span>,{' '}
+                                <span className="text-pink-300">Postman</span>,{' '}
+                                <span className="text-pink-300">Figma</span>,{' '}
+                                <span className="text-pink-300">Vercel</span>,{' '}
+                                <span className="text-pink-300">Netlify</span>]
+                                <br />
                                 &#125;;
                             </code>
                         </pre>
