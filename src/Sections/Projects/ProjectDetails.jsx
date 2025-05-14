@@ -18,7 +18,7 @@ export default function ProjectDetails() {
   }, [activeImageIndex, images]);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="w-10/12 mx-auto px-4 py-8">
       <button
         onClick={() => navigate('/projects')}
         className="mb-5 text-blue-400 hover:text-blue-300 font-medium"
@@ -32,10 +32,10 @@ export default function ProjectDetails() {
             <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
           </div>
         ) : (
-          <img 
+          <img
             src={images[activeImageIndex]}
             alt={title}
-            className="w-full h-96 object-cover rounded-md"
+            className="w-full h-64 md:h-[70vh] object-cover rounded-md"
             onLoad={() => setIsLoading(false)}
           />
         )}
@@ -46,9 +46,8 @@ export default function ProjectDetails() {
               <button
                 key={index}
                 onClick={() => setActiveImageIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeImageIndex ? "bg-blue-500" : "bg-gray-600 hover:bg-gray-500"
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors ${index === activeImageIndex ? "bg-blue-500" : "bg-gray-600 hover:bg-gray-500"
+                  }`}
                 aria-label={`View image ${index + 1}`}
               />
             ))}
@@ -56,7 +55,7 @@ export default function ProjectDetails() {
         )}
       </div>
 
-      <div className="flex flex-wrap gap-5 my-5">
+      <div className="flex flex-wrap gap-5 mt-5 md:mt-0 mb-5">
         {techs.map((TechIcon, index) => (
           <span
             key={index}
@@ -88,61 +87,64 @@ export default function ProjectDetails() {
       </div>
       <p className="mt-2 mb-5">{desc}</p>
 
-      <div className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
-          Key Features
-        </h2>
-        <ul className="space-y-2">
-          {features.map((feature, index) => (
-            <li key={index}>
-              <span className="text-blue-400 mr-2 mt-1">•</span>
-              <span className="text-gray-300">{feature}</span>
-            </li>
-          ))}
-        </ul>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-10">
+        <div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
+            Key Features
+          </h2>
+          <ul className="space-y-2">
+            {features.map((feature, index) => (
+              <li key={index} className="flex">
+                <span className="text-blue-400 mr-2 mt-1">•</span>
+                <span className="text-gray-300">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
+            Development Challenges
+          </h2>
+          <ul className="space-y-2">
+            {challenges.map((challenge, index) => (
+              <li key={index} className="flex">
+                <span className="text-blue-400 mr-2 mt-1">•</span>
+                <span className="text-gray-300">{challenge}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
+            Solution Strategies
+          </h2>
+          <ul className="space-y-2">
+            {strategy.map((approach, index) => (
+              <li key={index} className="flex">
+                <span className="text-blue-400 mr-2 mt-1">•</span>
+                <span className="text-gray-300">{approach}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
+            Future Enhancements
+          </h2>
+          <ul className="space-y-2">
+            {futureScope.map((scope, index) => (
+              <li key={index} className="flex">
+                <span className="text-blue-400 mr-2 mt-1">•</span>
+                <span className="text-gray-300">{scope}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-      <div className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
-          Development Challenges
-        </h2>
-        <ul className="space-y-2">
-          {challenges.map((challenge, index) => (
-            <li key={index}>
-              <span className="text-blue-400 mr-2 mt-1">•</span>
-              <span className="text-gray-300">{challenge}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
-          Solution Strategies
-        </h2>
-        <ul className="space-y-2">
-          {strategy.map((approach, index) => (
-            <li key={index}>
-              <span className="text-blue-400 mr-2 mt-1">•</span>
-              <span className="text-gray-300">{approach}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div className="mb-10">
-        <h2 className="text-xl font-semibold mb-4 pb-2 border-b border-blue-500/50">
-          Future Enhancements
-        </h2>
-        <ul className="space-y-2">
-          {futureScope.map((scope, index) => (
-            <li key={index}>
-              <span className="text-blue-400 mr-2 mt-1">•</span>
-              <span className="text-gray-300">{scope}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 }

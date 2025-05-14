@@ -7,7 +7,7 @@ export default function AchievementDetails() {
     const navigate = useNavigate();
 
     return (
-        <section className="max-w-4xl mx-auto p-6 md:p-10">
+        <section className="w-10/12 mx-auto p-6 md:p-10">
             <button
                 onClick={() => navigate(-1)}
                 className="mb-5 text-blue-400 hover:text-blue-300 font-medium"
@@ -17,7 +17,7 @@ export default function AchievementDetails() {
             <img
                 src={achievement.imgSrc}
                 alt={achievement.imgAlt}
-                className="h-72 md:h-96 w-full rounded-lg mb-6"
+                className="w-full h-64 md:h-[70vh] object-center rounded-md mb-6"
             />
             <div className="flex justify-between items-center mb-3">
                 <h2 className="text-3xl font-bold">{achievement.title}</h2>

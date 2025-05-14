@@ -2,6 +2,7 @@
 import frontEnd from '../../assets/services/front-end.svg';
 import api from '../../assets/services/api.svg';
 import custom from '../../assets/services/custom.svg';
+import fullStack from '../../assets/services/full-stack.svg';
 import { useState } from 'react';
 import '../../App.css';
 import Tilt from 'react-parallax-tilt';
@@ -11,11 +12,32 @@ export default function Services() {
   const [activeService, setActiveService] = useState(null);
 
   const services = [
-    { id: 1, img: frontEnd, name: 'Front-end Development', desc: 'With a strong focus on user experience, I develop responsive and interactive user interfaces using React, emphasizing clean code and best practices. My goal is to create modern, intuitive designs that engage users and boost conversions, ensuring your application delivers exceptional value.' },
+  {
+    id: 1,
+    img: frontEnd,
+    name: 'Front-end Development',
+    desc: 'With a strong focus on user experience, I develop responsive and interactive user interfaces using React, emphasizing clean code and best practices. My goal is to create modern, intuitive designs that engage users and boost conversions, ensuring your application delivers exceptional value.'
+  },
+  {
+    id: 2,
+    img: custom,
+    name: 'Custom Website',
+    desc: 'I build tailored web applications using the MERN stack, combining cutting-edge technology with your business goals. My focus on scalability and performance ensures a seamless user experience that helps you stand out in a competitive market.'
+  },
+  {
+    id: 3,
+    img: api,
+    name: 'API Development',
+    desc: 'I create robust RESTful APIs with Express.js and Node.js, designed for performance, security, and scalability. My APIs facilitate smooth data exchange, empowering your application to enhance user satisfaction and drive retention.'
+  },
+  {
+    id: 4,
+    img: fullStack,
+    name: 'Full Stack Development',
+    desc: 'From designing the front-end to setting up the back-end and managing the database, I deliver full-stack MERN solutions. I ensure smooth integration between technologies, implement secure authentication, and optimize for performance to bring your project vision to life end-to-end.'
+  }
+];
 
-    { id: 2, img: custom, name: 'Custom Website', desc: 'I build tailored web applications using the MERN stack, combining cutting-edge technology with your business goals. My focus on scalability and performance ensures a seamless user experience that helps you stand out in a competitive market.' },
-    { id: 3, img: api, name: 'API Development', desc: 'I create robust RESTful APIs with Express.js and Node.js, designed for performance, security, and scalability. My APIs facilitate smooth data exchange, empowering your application to enhance user satisfaction and drive retention.' },
-  ];
 
   const handleCardClick = (id) => {
     setActiveService(activeService === id ? null : id);
@@ -35,16 +57,16 @@ export default function Services() {
               </span>
             ))}
           </div>
-          <small className='hidden md:block mt-3 text-sm'>&#xFF02;To give real service you must add something which cannot be bought or measured with <br /> money, and that is sincerity and integrity&#xFF02; <i className=' whitespace-nowrap'>— Don Alden Adams</i></small>
+          <p className='hidden md:block mt-3 text-sm'>&#xFF02;To give real service you must add something which cannot be bought or measured with <br /> money, and that is sincerity and integrity&#xFF02; <i className=' whitespace-nowrap'>— Don Alden Adams</i></p>
         </div>
         <div className="w-full flex justify-center items-center">
-          <div className=' grid md:grid-cols-3 gap-5 md:gap-10 justify-items-center'>
+          <div className=' grid md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-10 justify-items-center'>
             {
               services.map((service, index) => (
                 <Tilt key={index}>
                   <div
                     onClick={() => handleCardClick(service.id)}
-                    className={`w-64 md:w-56 lg:w-72 h-[150px] md:h-[300px] rounded-lg shadow-xl cursor-pointer relative overflow-hidden ${service.id === 1 || service.id === 3 ? 'bg-[#A4E6B7] hover:bg-[#8fe2a7]' : 'bg-[#D39BD9] hover:bg-[#C886D3]'}`}>
+                    className={`w-64 md:w-72 lg:w-56 xl:w-72  h-[150px] md:h-[300px] rounded-lg shadow-xl cursor-pointer relative overflow-hidden ${service.id === 1 || service.id === 3 ? 'bg-[#A4E6B7] hover:bg-[#8fe2a7]' : 'bg-[#D39BD9] hover:bg-[#C886D3]'}`}>
                     <div
                       className={`absolute inset-0 flex justify-center items-center transition-transform duration-500 ${activeService === service.id ? 'translate-x-[-100%]' : 'translate-x-0'
                         }`}

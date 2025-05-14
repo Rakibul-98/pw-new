@@ -14,7 +14,7 @@ export default function Projects() {
             : projects.filter((proj) => proj.category === activeCategory);
 
     return (
-        <div className="w-[95%] mx-auto">
+        <div className="w-11/12 mx-auto">
             <ProjectMenu
                 categories={categories}
                 activeCategory={activeCategory}

@@ -13,7 +13,7 @@ export default function AchievementCard({ achievement }) {
                 onClick={() => navigate(`/achievements/${achievement.id}`)}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="h-[130px] md:h-[200px] rounded-lg shadow-xl cursor-pointer hover:scale-105 relative overflow-hidden bg-base-100 text-base-200"
+                className="h-[130px] md:h-[210px] rounded-lg shadow-xl cursor-pointer hover:scale-105 relative overflow-hidden bg-base-100 text-base-200"
             >
                 <div
                     className={`absolute inset-0 flex justify-center items-center transition-transform duration-500 ${isHovered ? 'translate-x-[-100%]' : 'translate-x-0'

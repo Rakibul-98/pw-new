@@ -33,8 +33,8 @@ export default function Contact() {
 
   return (
     <div className="relative min-h-screen flex items-center py-10 text-sm">
-      <div className="w-10/12 xl:w-[1100px] pr-5 lg:pr-0 mx-auto md:flex justify-between flex-row-reverse gap-10">
-        <div className='md:w-[55%] lg:w-1/2 mb-10 lg:mb-0'>
+      <div className="w-10/12 mx-auto lg:flex justify-between flex-row-reverse gap-10">
+        <div className='lg:w-1/2 mb-10 lg:mb-0'>
           <div className="flex justify-between items-baseline">
             <h2 className='text-3xl font-medium'>Get in touch</h2>
             <div className='flex items-center gap-3'>
@@ -59,12 +59,12 @@ export default function Contact() {
             <div className="flex justify-end"><button className='px-7 py-2 glow-btn bg-base-200 text-base-100 rounded-badge hover:bg-base-100 hover:text-base-200'>SUBMIT</button></div>
           </form>
         </div>
-        <div className='lg:w-1/2 flex items-center mb-5'>
+        <div className='lg:w-1/2 flex mb-5'>
           <div>
             <div className='flex gap-8 mb-3'>
               <div className="avatar mb-3">
                 <div className="ring-primary ring-offset-[#e0e8e2] w-16 rounded-full ring ring-offset-2">
-                  <img src={profile} />
+                  <img src={profile} alt="Profile" />
                 </div>
               </div>
               <div className='flex items-center'>
@@ -72,10 +72,23 @@ export default function Contact() {
                 <span className="self-center whitespace-nowrap text-5xl font-semibold mb-2">RH</span>
               </div>
             </div>
+
             <div>
-              <p>Thanks for scrolling all the way down — that means a lot! </p> <p className='my-2'>This portfolio is not just a showcase — it’s a reflection of my journey, my values, and the impact I hope to make through technology. If something here caught your eye or sparked an idea, don’t hesitate to reach out.</p> <p>  Let’s connect and build something meaningful together.</p>
+              <p>Thanks for scrolling all the way down — that means a lot!</p>
+              <p className='my-2'>
+                This portfolio is not just a showcase — it’s a reflection of my journey, my values, and the impact I hope to make through technology.
+                If something here caught your eye or sparked an idea, don’t hesitate to reach out.
+              </p>
+              <p>Let’s connect and build something meaningful together.</p>
             </div>
-            <div className="mt-4 flex gap-4 text-sm text-primary">
+
+            <div className="mt-5 text-sm leading-relaxed">
+              <p><strong>Email:</strong> <a href="mailto:rakibul.hasan.private@gmail.com" className="text-primary hover:text-base-100">rakibul.hasan.private@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+8801728976379" className="text-primary hover:text-base-100">+88017 2897-6379</a></p>
+              <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-4 text-sm text-primary">
               <Link to='/projects' className="hover:text-base-100">
                 Projects
               </Link>
@@ -87,6 +100,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
       </div>
       <footer className='absolute bottom-5 text-center w-full text-sm'><p>© All Rights Reserved | Design and Implemented by <a className='underline text-md font-semibold whitespace-nowrap hover:text-primary' href="https://github.com/Rakibul-98" target="_blank" rel="noReferrer">Rakibul Hasan</a></p></footer>
     </div>

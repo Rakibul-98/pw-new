@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
                 onClick={() => navigate(`/projects/${id}`)}
                 className="card w-full cursor-pointer bg-[#0a121f] hover:scale-[1.05] transition-transform shadow-2xl shadow-slate-600 h-full"
             >
-                <figure className="h-40 overflow-hidden">
+                <figure className="h-52 md:h-48 lg:h-40 overflow-hidden">
                     <img src={images[0]} alt={title} className="w-full h-full object-cover" />
                 </figure>
 

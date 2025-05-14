@@ -24,13 +24,13 @@ export default function BlogSection() {
       image: 'https://i.ibb.co.com/L6qTyrb/design-VSdev.png',
       link: 'https://rakibul-98.medium.com/web-design-vs-web-development-d11008da50e8'
     },
-    // {
-    //   id: 4,
-    //   title: '6 Reasons Your Business Needs an Online Presence',
-    //   description: "In today's digital age, having an online presence is no longer optional for businesses - it's essential. Whether you're a small local shop or a large corporation, an effective online presence can significantly impact your brand's visibility, customer engagement, and growth.",
-    //   image: 'https://i.ibb.co.com/kQHPz7X/store.jpg',
-    //   link: 'https://rakibul-98.medium.com/6-reasons-your-business-needs-an-online-presence-52e582582e0b'
-    // },
+    {
+      id: 4,
+      title: '6 Reasons Your Business Needs an Online Presence',
+      description: "In today's digital age, having an online presence is no longer optional for businesses - it's essential. Whether you're a small local shop or a large corporation, an effective online presence can significantly impact your brand's visibility, customer engagement, and growth.",
+      image: 'https://i.ibb.co.com/kQHPz7X/store.jpg',
+      link: 'https://rakibul-98.medium.com/6-reasons-your-business-needs-an-online-presence-52e582582e0b'
+    },
     {
       id: 5,
       title: '10 Most basic HTML tags you must know',
@@ -41,21 +41,21 @@ export default function BlogSection() {
   ];
 
   return (
-    <div className="min-h-screen w-11/12 xl:w-[1200px] mx-auto py-10">
+    <div className="min-h-screen w-10/12 mx-auto py-10">
       <div className='text-center mb-10'>
         <h2 className="text-4xl md:text-6xl uppercase font-bold mb-2 blog-title">Blogs</h2>
         <p>&quot;Blogging is not about writing for yourself, it&apos;s about writing for your audience.&quot; — <i>Jeff Bullas</i></p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         {blogs.map((blog) => (
           <Tilt key={blog.id}>
             <div  className="bg-base-300 shadow-md rounded-xl overflow-hidden hover:shadow-xl transition duration-300">
-              <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
+              <img src={blog.image} alt={blog.title} className="w-full h-44 object-cover" />
               <div className="p-5 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2 line-clamp-2">{blog.title}</h3>
-                  <p className="text-sm line-clamp-3 my-5">{blog.description}</p>
+                  <h3 className="text-xl font-semibold line-clamp-2">{blog.title}</h3>
+                  <p className="text-sm line-clamp-3 my-3">{blog.description}</p>
                 </div>
                 <Link
                   to={blog.link}
