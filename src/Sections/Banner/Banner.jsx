@@ -1,5 +1,5 @@
 
-import Resume from '../../assets/Resume_rakibul .pdf';
+import Resume from '../../assets/resume_rakibul_hasan.pdf';
 import BannerDescription from './BannerDescription';
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 import { AiFillMediumSquare } from 'react-icons/ai';
